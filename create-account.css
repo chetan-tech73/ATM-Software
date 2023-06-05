@@ -1,0 +1,49 @@
+#registrationForm{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#registrationForm h2{
+    text-align: center;
+}
+
+#registrationForm div{
+    margin-bottom: 10px;
+}
+
+#registrationForm label{
+    display: block;
+    font-weight: bold;
+}
+
+#registrationForm input[type="text"],
+#registrationForm input[type="email"]{
+width: 100%;
+padding: 10px;
+background-color: #8f8de9;
+border: none;
+border-radius: 10px;
+color: azure;
+}
+
+#registrationForm input[type="number"]{
+    width: 30%;
+    padding: 10px;
+    background-color: #8f8de9;
+border: none;
+border-radius: 10px;
+color: #35e7d0;
+}
+
+#registrationForm button[type="submit"]{
+background-color: #035c0f;
+border: none;
+border-radius: 8px;
+padding: 10px;
+color: aliceblue;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#registrationForm button[type="submit"]:hover{
+    background-color: #68c0b4;
+}

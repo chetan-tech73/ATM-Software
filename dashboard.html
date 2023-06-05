@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome!</title>
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+    <div id="dashboard">
+        <h1>Hello, <span id="firstName"></span>!</h1>
+        <p id="accountNumber"></p>
+        <div id="menu">
+          <div class="button-row">
+            
+             <button id="Transfer">Transfer Funds</button>
+           
+            <button id="creditAccount">Credit Account</button>
+          </div>
+          <div class="button-row">
+            <button id="withdraw">Withdraw</button>
+            <button id="logout">Logout</button>
+          </div>
+        </div>
+        <p id="message"></p>
+        <button id="balanceBtn">Balance: <span id="balance">₦0.00</span></button>
+      </div>
+      <script src="./dashboard.js"></script>
+      <script src="./transfer.js"></script>
+      <script src="./creditAccount.js"></script>
+      <script src="./withdraw.js"></script>
+      <script src="./logOut.js"></script>
+
+      <script>
+        const acc = JSON.parse(localStorage.getItem('accountDetails'))
+        let balanceElement = document.getElementById("balance");
+        balanceElement.textContent = acc.balance
+      </script>
+  
+</body>
+</html>
